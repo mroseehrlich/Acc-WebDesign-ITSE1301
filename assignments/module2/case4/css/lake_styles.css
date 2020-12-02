@@ -1,0 +1,151 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: 'Champagne';
+    src: url(../resources/cac_champagne.ttf) format('truetype'),
+         url(../resources/cac_champagne.woff) format('woff');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Mia Ehrlich
+   Date: 2/2/2020  
+   
+   Filename: lake_styles.css
+
+*/
+
+/* Structural Styles */
+html {
+    background-color: rgb(36, 36, 68);
+}
+
+body {
+    background-color: rgb(255, 235, 205);
+}
+
+p, li {
+    font-family: sans-serif;
+    color: darkslategray;
+}
+
+/* Nav Styles */
+
+header nav {
+    background-color: rgb(70, 70, 92);
+    padding: 0.8em 0.5em;
+}
+
+header nav ul li a, header nav ul li a:visited {
+    color: whitesmoke;
+    font-family: 'Champagne';
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+header nav ul li a:active, header nav ul li a:hover {
+    color: rgba(238, 105, 81, 0.75);
+    font-size: 1.6em;
+}
+
+/* Heading Styles */
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(70, 70, 92);
+    font-variant: small-caps;
+}
+
+/* Left Column Styles */
+
+#leftcol {
+    padding-left: 25px;
+}
+
+#leftcol h1 {
+    letter-spacing: 2px;
+}
+
+/* Aside Styles */
+
+aside h2 {
+    font-family: cursive;
+    font-variant: normal;
+    font-weight: bold;
+    color: rgba(238, 105, 81, 0.75);
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: rgba(238, 105, 81, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+/* Right Column Styles */
+
+#rightcol h2 {
+    letter-spacing: 2px;
+}
+
+#rightcol nav ul {
+    list-style: circle;
+}
+
+#rightcol nav ul li a {
+    color: rgba(238, 105, 81, 0.75);
+    text-decoration: none;
+}
+
+/* Blockquote Styles */
+
+blockquote {
+    width: 90%;;
+    background-color: rgba(252, 185, 86, 0.8);
+    color: darkslategray;
+    padding: 1em 1.5em;
+    font-family: cursive;
+    font-size: 1.25em;
+    quotes: '\201C' '\201D';
+}
+
+blockquote::before {
+    content: open-quote;
+    margin-right: 0.5em;
+}
+
+blockquote::after {
+    content: close-quote;
+    margin-left: 0.5em;
+}
+
+blockquote::before, blockquote::after {
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgba(245, 245, 245, 0.7);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: rgb(70, 70, 92);
+    padding: 0.8em 0.5em;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+footer em {
+    font-family: cursive;
+}
+

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    text-align: center;
+}
+
+.bannerLogo, nav, main, article, footer {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.bannerLogo {
+    height: 20vh;
+    margin-bottom: 10px;
+}
+
+nav {
+    height: 5vh;
+    margin-bottom: 10px;
+}
+
+main {
+    height: 70vh;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 80%;
+    margin: 20px auto 0;
+    height: 60vh;
+}
+
+footer {
+    height: 5vh;
+}

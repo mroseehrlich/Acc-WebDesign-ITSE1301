@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author: Mia Ehrlich  
+   Date: 3/12/20      
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+/* General Flexbox Styles */
+
+.logo {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+main.main {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+} 
+
+
+.article {
+    -webkit-flex: 3 1 300px;
+    flex: 3 1 300px;
+}
+
+
+.article-text {
+    display: -webkit-flex;
+	display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
+.p1 {
+    order: 2;
+}
+
+.p2 {
+    order: 3;
+}
+
+.p3 {
+    order: 4;
+}
+
+.p4 {
+    order: 1;
+}
+
+.p4 span {
+    color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+/* Footer styles */
+
+footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/* 
+TABLET STYLES: 481px and greater
+*/
+
+@media only screen and (min-width: 481px) {
+    main.main {
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        align-items: stretch;
+    } 
+
+    article {
+        -webkit-flex: 2 1 400px;
+        flex: 2 1 400px;
+    }
+
+    aside {
+        -webkit-flex: 2 1 300px;
+        flex: 2 1 300px;
+        text-align: center;
+        align-self: stretch;
+   }
+       
+   dl {
+       margin: 1em;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: row wrap;
+       flex-flow: row wrap;
+       justify-content: center;
+   }
+       
+   .definition {
+       -webkit-flex: 0 1 100px;
+       flex: 0 1 100px;
+       margin: 1em 0.6em;
+   }
+}
+
+/* DESKTOP styles */
+
+@media only screen and (min-width: 801px) {
+    /* Footer styles */
+
+   footer {
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+   }
+}

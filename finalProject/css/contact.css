@@ -1,0 +1,48 @@
+form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-top: 1em;
+    padding: 0.7em;
+    border-radius: 8px 8px 8px 8px;
+    background-color:rgba(137, 134, 171, 0.4);
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    font: 'AmaticSC';
+    color: white;
+}
+
+.msg_text {
+    text-align: center;
+}
+
+.form_button_container {
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+button {
+    padding: 0 1em;
+    border-radius: 20px;
+    margin-top: 1em;
+    background-color: white;
+    border: 1px solid rgb(137, 134, 171);
+    font-family: 'AmaticSC';
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: rgb(39, 44, 111);
+
+}
+
+button:first-of-type {
+    margin-right: .8em;
+}
